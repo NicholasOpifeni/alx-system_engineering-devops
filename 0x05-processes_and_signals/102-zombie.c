@@ -23,7 +23,7 @@ int main(void)
 {
 	int i;
 	pid_t zombie;
-	
+
 	for (i = 0; i < 5; i++)
 	{
 		zombie = fork();
@@ -31,7 +31,7 @@ int main(void)
 			return (0);
 		printf("Zombie process created, PID: %d\n", zombie);
 	}
-	
+
 	infinite_while();
 	return (0);
 }
